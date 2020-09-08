@@ -1,0 +1,35 @@
+.wrapcontent{
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav contant contant" ;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;  
+  }
+  .header{
+    grid-area: header;
+        background-color: #383a45;
+  }
+ main{
+    grid-area: contant;
+    background: #fff;
+  }
+  .chat_img{
+  background:url("./images/chat_img_background.jpg");
+  width: 100%;
+  height: 100px;
+  background-size: contain;
+  background-position: 50%;
+  }
+  nav{
+    height: 100vh;
+    grid-area: nav;
+    background: #3f47f4;
+    color: #fff;
+    a{
+        color: #fff;
+        text-decoration: none;
+        padding: 20px;
+      }
+  }  
+  

@@ -1,0 +1,33 @@
+.sidebar{
+    background-color: #383a45;
+background-image: linear-gradient(135deg, #4f5261 0%, #383a45 50%);
+}
+.panel-block.light{
+    background: #f8f9fb;
+    height: 100%;
+}
+.panel-block.light div a{  
+    color: #838daa; 
+    
+   
+    
+    
+}
+.logo{
+    margin: 20px 0;
+}
+
+.logo img{
+      width: 20px;
+      height: 20px;
+      background: #fff; 
+      position: relative;
+      left: calc(50% - 10px);    
+      padding: 5px;
+      border-radius: 50%;
+  }
+.panel-block.dark{
+    
+    
+    height: 300px;
+}

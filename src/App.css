@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.wrapcontent{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "nav contant contant" ;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  grid-area: header;
+  background: #3f47f4;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header img{
+  width: 20px;
+height: 20px;
+background: #fff;
+position: relative;
+left:2%;
+top: calc(50% - 20px);
+padding: 5px;
+border-radius: 50%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main{
+  grid-area: contant;
+  background: #fff;
 }
-
-.App-link {
-  color: #61dafb;
+.chat_img{
+background:url("./images/chat_img_background.jpg");
+width: 100%;
+height: 100px;
+background-size: contain;
+background-position: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav{
+  height: 100vh;
+  grid-area: nav;
+  background: #3f47f4;
+  color: #fff;
+}
+nav a{
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
 }
